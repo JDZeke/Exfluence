@@ -1,1 +1,1 @@
-# Exfluence
+# Exfluence: the start of influence, the output of something created which in turn becomes influence for something or someone. exfluence is more general than influence which is personal, it is concerned with the present and future and can be used at the time of something created if it hasn't influenced anybody or anything yet but has the potential to. Applying to art, music, architecture, film etc.
