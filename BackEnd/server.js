@@ -1,17 +1,9 @@
+var express = require("express");
+var serveStatic = require("serve-static");
+const bodyParser = require("body-parser");
 
-const express = require("express");
-const app = express();
-
-// serve the static application when client connects
-app.use(express.static(__dirname + "./../FrontEnd/dist/"));
-app.get("/", (req, res) => {
-  console.log(path)
-  res.sendFile(path + "index.html");
-});
-
-// the server runs on this port
-const serverPort = process.env.PORT || 3000;
-
-app.listen(serverPort, () => {
-  console.log("server running on port " + serverPort);
-});
+app = express();
+app.use(serveStatic(__dirname + "/../FrontEnd/dist"));
+var port = process.env.PORT || 3000;
+app.listen(port);
+app.use(bodyParser.json({ extended: true }));
