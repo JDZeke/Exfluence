@@ -7,7 +7,7 @@
 
       <v-spacer></v-spacer>
     </v-app-bar>
-    <v-main style="background:SkyBlue">
+    <v-main>
       <router-view />
     </v-main>
   </v-app>
