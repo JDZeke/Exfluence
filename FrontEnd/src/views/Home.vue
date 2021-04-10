@@ -12,7 +12,7 @@
                 </h1>
                 <h3>
                   <div>
-                    Exfluence’s Open Résumé Format (ORÉF) is designed to allow a universal standard for resume creation.
+                    Exfluence’s Open Résumé Format (OREF) is designed to allow a universal standard for resume creation.
                     A common hassle regarding job applications is the lack of an easily interchangeable resume
                     format/template. The use of this application will provide the user both a seamless and efficient way
                     to transfer data that may be repeated on numerous applications.

@@ -1,17 +1,101 @@
 {
   "Identification Information": {
     "Full Name": {
-      "Prefix": "",
-      "First Name": "",
-      "Last Name": ""
+      "Prefix": { "type": "text", "regex": "/.*/" },
+      "First Name": { "type": "text", "regex": "/.*/" },
+      "Last Name": { "type": "text", "regex": "/.*/" },
+      "Suffix": { "type": "text", "regex": "/.*/" }
+    },
+    "Objective": {
+      "Overall Objective": { "type": "textarea" }
+    },
+    "Links": {
+      "LinkedIn": { "type": "text", "regex": "/.*/" },
+      "GitHub": { "type": "text", "regex": "/.*/" },
+      "Other": { "type": "text", "regex": "/.*/" }
     },
     "Contact Info": {
-      "Address": ""
+      "Address": { "type": "text", "regex": "/.*/" },
+      "City": { "type": "text", "regex": "/.*/" },
+      "State": { "type": "text", "regex": "/^[a-zA-Z]{2}$/" },
+      "Country": { "type": "text", "regex": "/.*/" },
+      "Zip Code": { "type": "text", "regex": "/[0-9]{5,}/" },
+      "Mobile Phone Number (XXX) XXX-XXXX": { "type": "text", "regex": "^(+d{1,2}s)?(?d{3})?[s.-]?d{3}[s.-]?d{4}$" },
+      "Home Phone Number (XXX) XXX-XXXX": { "type": "text", "regex": "^(+d{1,2}s)?(?d{3})?[s.-]?d{3}[s.-]?d{4}$" },
+      "Email": { "type": "text", "regex": "/[a-zA-Z0-9]+@[a-zA-Z]*.com/" }
     }
   },
   "Education": {
-    "School": {
-      "Name": ""
+    "School 1": {
+      "Name": { "type": "text", "regex": "/.*/" },
+      "Degree Obtained": { "type": "combobox", "options": ["Associate", "Bachelors", "Masters", "Doctoral"] },
+      "Gpa": { "type": "combobox", "options": ["<2.0", "2.0-3.0", "3.0-3.59", "3.6 - 4.0"] },
+      "Years Studying": { "type": "text", "regex": "/[0-9]{4}-[0-9]{4}/" },
+      "Clubs/Organizations": { "type": "text", "regex": "/.*/" }
+    }
+  },
+  "Skills": {
+    "Skill 1": {
+      "Skill Name": { "type": "text", "regex": "/.*/" },
+      "Mastery Level": { "type": "combobox", "options": ["Novice", "Intermediate", "Advanced", "Expert"] }
+    }
+  },
+  "Work Experience": {
+    "Position 1": {
+      "Company Name": { "type": "text", "regex": "/.*/" },
+      "Position Type": { "type": "combobox", "options": ["Seasonal", "Part-Time", "Full-Time", "Internship"] },
+      "Company Address": { "type": "text", "regex": "/.*/" },
+      "Position Title": { "type": "text", "regex": "/.*/" },
+      "Years Employed": { "type": "text", "regex": "/.*/" },
+      "Responsibilities": { "type": "textarea" }
+    }
+  },
+  "Awards/Certifications": {
+    "Award 1": {
+      "Award/Certificate Name": { "type": "text", "regex": "/.*/" },
+      "Year Awarded": { "type": "text", "regex": "/[0-9]{4}/" }
+    }
+  },
+  "Projects/Volunteer work": {
+    "Project 1": {
+      "Project/Volunteer Name": { "type": "text", "regex": "/.*/" },
+      "Description": { "type": "textarea" }
+    }
+  },
+  "Legal": {
+    "Legal": {
+      "US Citizen": { "type": "combobox", "options": ["yes", "no"] },
+      "Veteran Status": {
+        "type": "combobox",
+        "options": [
+          "Disabled veterans",
+          "Recently Seperated Veteran",
+          "Active Wartime or Campaign Badge Veteran",
+          "Armed Forces Special Medal Veteran",
+          "I am NOT a Protected Veteran",
+          "I am not a Veteran",
+          "I Choose Not to Identify my Veteran Status"
+        ]
+      },
+      "Disabilities": {
+        "type": "combobox",
+        "options": ["Yes, I have a Disability", "No, I don't have a disability", "I don't wish to answer"]
+      },
+      "Race": {
+        "type": "combobox",
+        "options": [
+          "Hispanic or Latino",
+          "White",
+          "Black or African American",
+          "Native Hawaiian or Pacific Islander",
+          "Asian",
+          "Native American or Alaska Native",
+          "Two or more races",
+          "I do not wish to disclose"
+        ]
+      },
+      "Gender": { "type": "combobox", "options": ["Male", "Female", "Decline to answer", "Other"] },
+      "Ethnicity (Hispanic or Latino)": { "type": "combobox", "options": ["yes", "no"] }
     }
   }
 }
