@@ -1,0 +1,17 @@
+{
+  "Identification Information": {
+    "Full Name": {
+      "Prefix": "",
+      "First Name": "",
+      "Last Name": ""
+    },
+    "Contact Info": {
+      "Address": ""
+    }
+  },
+  "Education": {
+    "School": {
+      "Name": ""
+    }
+  }
+}
