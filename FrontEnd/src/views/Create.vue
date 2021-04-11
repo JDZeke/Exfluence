@@ -88,8 +88,7 @@ export default {
       a.click();
     },
     addable(section) {
-      console.log(section);
-      return true;
+      return !isNaN(section[section.length -1]);
     },
     addSection(name, subName) {
       let temp = JSON.parse(JSON.stringify(this.format[name][subName]));
